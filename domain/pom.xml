@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.purnima.jain</groupId>
+		<groupId>com.malicia.mrg</groupId>
 		<artifactId>spring-boot-multi-module</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
