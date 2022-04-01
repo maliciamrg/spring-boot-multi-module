@@ -4,21 +4,60 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.env.Environment;
+import org.springframework.util.StringUtils;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.Optional;
 
 @SpringBootApplication
 public class CustomerApplication {
 
-	private static final Logger logger = LoggerFactory.getLogger(CustomerApplication.class);
-	public static void main(String[] args) {
-		SpringApplication.run(CustomerApplication.class, args);
-		logger.trace("---==[ trace  ]==---");
-		logger.debug("---==[ debug ]==---");
-		logger.info("---==[  info   ]==---");
-		logger.warn("---==[  warn   ]==---");
-		logger.error("---==[ error  ]==---");
-		logger.info("Start");
+    public static final String HTTP_DEFAULT_PORT = "8080";
+    private static final Logger logger = LoggerFactory.getLogger(CustomerApplication.class);
 
-		logger.info("CustomerApplication Started........");
-	}
+    public static void main(String[] args) throws UnknownHostException {
+        final Environment env = SpringApplication.run(CustomerApplication.class, args).getEnvironment();
+        logApplicationStartup(env);
+
+        logger.trace("---==[ trace  ]==---");
+        logger.debug("---==[ debug ]==---");
+        logger.info("---==[  info   ]==---");
+        logger.warn("---==[  warn   ]==---");
+        logger.error("---==[ error  ]==---");
+        logger.info("Start");
+
+        logger.info("CustomerApplication Started........");
+    }
+
+    private static void logApplicationStartup(Environment env) throws UnknownHostException {
+        String protocol = "http";
+        if (env.getProperty("server.ssl.key-store") != null) {
+            protocol = "https";
+        }
+        final String serverPort = Optional.ofNullable(env.getProperty("server.port")).orElse(HTTP_DEFAULT_PORT);
+        String contextPath = env.getProperty("server.servlet.context-path");
+        if (StringUtils.isEmpty(contextPath)) {
+            contextPath = "/";
+        }
+        final String hosttAddress = InetAddress.getLocalHost().getHostAddress();
+        logger.info("\n---------------------------------------------------------------\n\t" +
+                        "Application '{} ({})' is running!\n\tAccess URLs:\n\t" +
+                        "Local: \t\t{}://localhost:{}{}\n\t" +
+                        "External: \t{}://{}:{}{}\n\t" +
+                        "Profile(s): \t{}\n\t" +
+                        "---------------------------------------------------------------\n\t",
+                env.getProperty("spring.application.name"),
+                env.getProperty("application.version"),
+                protocol,
+                serverPort,
+                contextPath,
+                protocol,
+                hosttAddress,
+                serverPort,
+                contextPath,
+                env.getActiveProfiles());
+    }
 
 }

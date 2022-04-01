@@ -1,0 +1,66 @@
+[INFO ] 2022-03-31 11:50:41.295 [main] CustomerApplication:55 - Starting CustomerApplication on DESKTOP-4QC08HV with PID 8604 (D:\50-Projets\JavaProjet\spring-boot-multi-module\application\target\classes started by professorX in D:\50-Projets\JavaProjet\spring-boot-multi-module)
+[DEBUG] 2022-03-31 11:50:41.304 [main] CustomerApplication:56 - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[INFO ] 2022-03-31 11:50:41.304 [main] CustomerApplication:655 - The following profiles are active: local
+[INFO ] 2022-03-31 11:50:57.297 [main] CustomerApplication:55 - Starting CustomerApplication on DESKTOP-4QC08HV with PID 18028 (D:\50-Projets\JavaProjet\spring-boot-multi-module\application\target\classes started by professorX in D:\50-Projets\JavaProjet\spring-boot-multi-module)
+[DEBUG] 2022-03-31 11:50:57.306 [main] CustomerApplication:56 - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[INFO ] 2022-03-31 11:50:57.307 [main] CustomerApplication:655 - The following profiles are active: local
+[INFO ] 2022-03-31 11:50:58.555 [main] CustomerApplication:61 - Started CustomerApplication in 1.742 seconds (JVM running for 2.706)
+[INFO ] 2022-03-31 11:50:58.558 [main] CustomerApplication:45 - 
+---------------------------------------------------------------
+	Application 'template-multi-module-local (^project.version^)' is running!
+	Access URLs:
+	Local: 		http://localhost:8080/
+	External: 	http://192.168.1.245:8080/
+	Profile(s): 	[local]
+	---------------------------------------------------------------
+	
+[DEBUG] 2022-03-31 11:50:58.558 [main] CustomerApplication:25 - ---==[ debug ]==---
+[INFO ] 2022-03-31 11:50:58.558 [main] CustomerApplication:26 - ---==[  info   ]==---
+[WARN ] 2022-03-31 11:50:58.559 [main] CustomerApplication:27 - ---==[  warn   ]==---
+[ERROR] 2022-03-31 11:50:58.559 [main] CustomerApplication:28 - ---==[ error  ]==---
+[INFO ] 2022-03-31 11:50:58.559 [main] CustomerApplication:29 - Start
+[INFO ] 2022-03-31 11:50:58.559 [main] CustomerApplication:31 - CustomerApplication Started........
+[INFO ] 2022-03-31 12:56:30.618 [main] CustomerApplication:55 - Starting CustomerApplication on DESKTOP-4QC08HV with PID 13220 (D:\50-Projets\JavaProjet\spring-boot-multi-module\application\target\classes started by professorX in D:\50-Projets\JavaProjet\spring-boot-multi-module)
+[DEBUG] 2022-03-31 12:56:30.626 [main] CustomerApplication:56 - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[INFO ] 2022-03-31 12:56:30.627 [main] CustomerApplication:655 - The following profiles are active: local
+[INFO ] 2022-03-31 12:56:31.852 [main] CustomerApplication:61 - Started CustomerApplication in 1.741 seconds (JVM running for 2.754)
+[INFO ] 2022-03-31 12:56:31.855 [main] CustomerApplication:45 - 
+---------------------------------------------------------------
+	Application 'template-multi-module-local (^project.version^)' is running!
+	Access URLs:
+	Local: 		http://localhost:8080/
+	External: 	http://192.168.1.245:8080/
+	Profile(s): 	[local]
+	---------------------------------------------------------------
+	
+[DEBUG] 2022-03-31 12:56:31.855 [main] CustomerApplication:25 - ---==[ debug ]==---
+[INFO ] 2022-03-31 12:56:31.855 [main] CustomerApplication:26 - ---==[  info   ]==---
+[WARN ] 2022-03-31 12:56:31.855 [main] CustomerApplication:27 - ---==[  warn   ]==---
+[ERROR] 2022-03-31 12:56:31.855 [main] CustomerApplication:28 - ---==[ error  ]==---
+[INFO ] 2022-03-31 12:56:31.856 [main] CustomerApplication:29 - Start
+[INFO ] 2022-03-31 12:56:31.856 [main] CustomerApplication:31 - CustomerApplication Started........
+[INFO ] 2022-03-31 13:02:34.131 [main] CustomerApplication:55 - Starting CustomerApplication on DESKTOP-4QC08HV with PID 16904 (D:\50-Projets\JavaProjet\spring-boot-multi-module\application\target\classes started by professorX in D:\50-Projets\JavaProjet\spring-boot-multi-module)
+[DEBUG] 2022-03-31 13:02:34.142 [main] CustomerApplication:56 - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[INFO ] 2022-03-31 13:02:34.143 [main] CustomerApplication:655 - The following profiles are active: local
+[INFO ] 2022-03-31 13:14:36.014 [main] CustomerApplication:55 - Starting CustomerApplication on DESKTOP-4QC08HV with PID 9872 (D:\50-Projets\JavaProjet\spring-boot-multi-module\application\target\classes started by professorX in D:\50-Projets\JavaProjet\spring-boot-multi-module)
+[DEBUG] 2022-03-31 13:14:36.022 [main] CustomerApplication:56 - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[INFO ] 2022-03-31 13:14:36.023 [main] CustomerApplication:655 - The following profiles are active: local
+[INFO ] 2022-03-31 21:39:42.621 [main] CustomerApplication:55 - Starting CustomerApplication on DESKTOP-4QC08HV with PID 9132 (D:\50-Projets\JavaProjet\spring-boot-multi-module\application\target\classes started by professorX in D:\50-Projets\JavaProjet\spring-boot-multi-module)
+[DEBUG] 2022-03-31 21:39:42.630 [main] CustomerApplication:56 - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+[INFO ] 2022-03-31 21:39:42.632 [main] CustomerApplication:651 - No active profile set, falling back to default profiles: default
+[INFO ] 2022-03-31 21:39:43.844 [main] CustomerApplication:61 - Started CustomerApplication in 1.616 seconds (JVM running for 2.661)
+[INFO ] 2022-03-31 21:39:43.846 [main] CustomerApplication:45 - 
+---------------------------------------------------------------
+	Application 'template-multi-module (^project.version^)' is running!
+	Access URLs:
+	Local: 		http://localhost:8080/
+	External: 	http://192.168.1.245:8080/
+	Profile(s): 	[]
+	---------------------------------------------------------------
+	
+[DEBUG] 2022-03-31 21:39:43.847 [main] CustomerApplication:25 - ---==[ debug ]==---
+[INFO ] 2022-03-31 21:39:43.847 [main] CustomerApplication:26 - ---==[  info   ]==---
+[WARN ] 2022-03-31 21:39:43.847 [main] CustomerApplication:27 - ---==[  warn   ]==---
+[ERROR] 2022-03-31 21:39:43.847 [main] CustomerApplication:28 - ---==[ error  ]==---
+[INFO ] 2022-03-31 21:39:43.847 [main] CustomerApplication:29 - Start
+[INFO ] 2022-03-31 21:39:43.847 [main] CustomerApplication:31 - CustomerApplication Started........

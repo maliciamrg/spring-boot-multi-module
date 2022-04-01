@@ -24,4 +24,14 @@ public class CustomerController {
 		return customerService.getCustomerById(customerId);
 	}
 
+	@GetMapping("/messages")
+	public String getMessage() {
+		return "Hello from Docker!";
+	}
+
+	@GetMapping("/")
+	public String index() {
+		return "Greetings from Spring Boot!";
+	}
+
 }
