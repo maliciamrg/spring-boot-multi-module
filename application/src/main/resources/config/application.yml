@@ -10,3 +10,10 @@ management:
     web:
       exposure:
         include: health,info,prometheus
+  metrics:
+    tags:
+      application: metrics_test_application
+    enable:
+#      all: false
+      metrics_test_tag: true
+
