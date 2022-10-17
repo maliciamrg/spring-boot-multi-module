@@ -13,3 +13,8 @@ Ref: https://dzone.com/articles/ddd-spring-boot-multi-module-maven-project
 
 Ref : https://www.javainuse.com/devOps/docker/docker-jar
 
+Add metrics monitoring
+- http://localhost:8080/actuator
+- http://localhost:8080/actuator/health
+- http://localhost:8080/actuator/prometheus
+

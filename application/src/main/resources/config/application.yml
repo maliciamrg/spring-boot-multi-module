@@ -4,3 +4,9 @@ spring:
 
 application:
   version: '^project.version^'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
