@@ -1,5 +1,10 @@
 package com.malicia.mrg.customer.controller;
 
+import io.micrometer.core.instrument.Counter;
+import io.micrometer.core.instrument.Meter;
+import io.micrometer.core.instrument.MeterRegistry;
+import io.micrometer.core.instrument.search.RequiredSearch;
+import io.micrometer.core.instrument.search.Search;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +22,8 @@ public class CustomerController {
 
 	@Autowired
 	private CustomerService customerService;
+	@Autowired
+	private MeterRegistry metricsRegistry;
 
 	@GetMapping("customer/{customerId}")
 	public Customer getCustomer(@PathVariable Integer customerId) {
@@ -32,6 +39,20 @@ public class CustomerController {
 	@GetMapping("/")
 	public String index() {
 		return "Greetings from Spring Boot!";
+	}
+
+	@GetMapping("tag/{tagName}")
+	public String setTagName(@PathVariable String tagName) {
+		logger.info("Inside CustomerController........");
+
+		Counter counter;
+//			counter = metricsRegistry.get("metrics_test_tag").tag("tagname", tagName).counter();
+		counter = metricsRegistry.find("metrics_test_tag").tag("tagname", tagName).counter();
+		if (counter==null) {
+			counter = Counter.builder("metrics_test_tag").tag("tagname", tagName).register(metricsRegistry);
+		}
+		counter.increment();
+		return "Done" + tagName;
 	}
 
 }
