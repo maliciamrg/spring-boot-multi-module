@@ -82,3 +82,4 @@ nb-configuration.xml
 ##############################
 .DS_Store
 /application/logs/
+/logs/
