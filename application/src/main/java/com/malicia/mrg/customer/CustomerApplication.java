@@ -49,7 +49,8 @@ public class CustomerApplication {
                         "Local: \t\t{}://localhost:{}{}\n\t" +
                         "External: \t{}://{}:{}{}\n\t" +
                         "Profile(s): \t{}\n\t" +
-                        "---------------------------------------------------------------\n\t",
+                        "---------------------------------------------------------------\n\t"+
+                        "Swagger: \t{}://{}:{}{}swagger-ui.html\n\t" ,
                 env.getProperty("spring.application.name"),
                 env.getProperty("application.version"),
                 protocol,
@@ -59,7 +60,11 @@ public class CustomerApplication {
                 hosttAddress,
                 serverPort,
                 contextPath,
-                env.getActiveProfiles());
+                env.getActiveProfiles(),
+                protocol,
+                hosttAddress,
+                serverPort,
+                contextPath);
     }
 
 }
