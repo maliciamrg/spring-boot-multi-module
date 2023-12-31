@@ -44,13 +44,16 @@ public class CustomerApplication {
             contextPath = "/";
         }
         final String hosttAddress = InetAddress.getLocalHost().getHostAddress();
+        final String ipOutsideDocker = env.getProperty("application.ipOutsideDocker");
         logger.info("\n---------------------------------------------------------------\n\t" +
                         "Application '{} ({})' is running!\n\tAccess URLs:\n\t" +
                         "Local: \t\t{}://localhost:{}{}\n\t" +
                         "External: \t{}://{}:{}{}\n\t" +
+                        "Ip for Testing: \t{}\n\t (manual)" +
                         "Profile(s): \t{}\n\t" +
                         "---------------------------------------------------------------\n\t"+
-                        "Swagger: \t{}://{}:{}{}swagger-ui.html\n\t" ,
+                        "Swagger: \t{}://{}:{}{}swagger-ui.html\n\t" +
+                        "Swagger for testing: \t{}swagger-ui.html\n\t" ,
                 env.getProperty("spring.application.name"),
                 env.getProperty("application.version"),
                 protocol,
@@ -60,11 +63,13 @@ public class CustomerApplication {
                 hosttAddress,
                 serverPort,
                 contextPath,
+                ipOutsideDocker,
                 env.getActiveProfiles(),
                 protocol,
                 hosttAddress,
                 serverPort,
-                contextPath);
+                contextPath,
+                ipOutsideDocker);
     }
 
 }

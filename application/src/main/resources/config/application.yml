@@ -4,6 +4,7 @@ spring:
 
 application:
   version: '^project.version^'
+  ipOutsideDocker: http://192.212.40.10:18080/
 
 management:
   endpoints:
