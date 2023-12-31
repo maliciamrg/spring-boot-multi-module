@@ -15,6 +15,12 @@
         <option name="upForceRecreate" value="true" />
       </settings>
     </deployment>
+    <deployment type="dockerfile">
+      <settings>
+        <option name="buildOnly" value="true" />
+        <option name="sourceFilePath" value="Dockerfile" />
+      </settings>
+    </deployment>
     <method v="2">
       <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean package" />
     </method>
