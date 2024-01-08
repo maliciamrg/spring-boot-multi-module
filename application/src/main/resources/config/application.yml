@@ -1,10 +1,17 @@
 spring:
   application:
     name: template-multi-module
+  datasource:
+    url: "jdbc:mysql://192.212.40.10:3306/multi-module"
+    username: multi-module-username
+    password: multi-module-password
 
-application:
   version: '^project.version^'
   ipOutsideDocker: http://192.212.40.10:18080/
+
+  liquibase:
+    change-log: classpath:config/liquibase/master.xml
+
 
 management:
   endpoints:
