@@ -55,11 +55,11 @@ public class CustomerApplication {
                         "Application '{} ({})' is running!\n\tAccess URLs:\n\t" +
                         "Local: \t\t{}://localhost:{}{}\n\t" +
                         "External: \t{}://{}:{}{}\n\t" +
-                        "Ip for Testing: \t{}\n\t (manual)" +
+                        "Ip for Testing: \t{}\t (manual)\n\t" +
                         "Profile(s): \t{}\n\t" +
                         "---------------------------------------------------------------\n\t"+
-                        "Swagger: \t{}://{}:{}{}swagger-ui.html\n\t" +
-                        "Swagger for testing: \t{}swagger-ui.html\n\t" ,
+                        "Swagger: \t{}://{}:{}{}swagger-ui/index.html\n\t" +
+                        "Swagger for testing: \t{}swagger-ui/index.html\n\t" ,
                 env.getProperty("spring.application.name"),
                 env.getProperty("application.version"),
                 protocol,
